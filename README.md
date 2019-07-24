@@ -1,4 +1,9 @@
-1. composer.json
+安装 
+~~~
+./dingtalk-extend/install.sh
+~~~
+
+1. 修改composer.json
 ~~~
 "autoload": {
     "classmap":[
@@ -7,14 +12,14 @@
 },
 ~~~
 
-2. config
+2. 配置config
 ~~~
 //钉钉相关配置
 'ding_appid' => '',
 'ding_appsecret' => '',
 ~~~
 
-3. 中间件 function
+3. 在中间件中InAppCheck使用 function
 ~~~
 public function dingtalk($request)
 {
